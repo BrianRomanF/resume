@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="head">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <h1>Brian Roman</h1>
@@ -82,8 +83,21 @@
                 <li>Software Documentation Control</li>
             </ul>
         </li>
-        
     </ul>
+    <button onclick="addCSS()" id="button">Toggle CSS</button>
 </body>
 <footer>© Brian Roman. All rights reserved.</footer>
+<script>
+    let counter = 0
+    function addCSS() {
+      counter++
+      if (counter % 2 !== 0) {
+        document.getElementById("head").innerHTML = '  <title>My Resume</title> \n<link rel="stylesheet" href="./styles.css" />'
+      } else {
+
+        document.getElementById("head").innerHTML = '  <title>My Resume</title> '
+
+      }
+    }
+  </script>
 </html>
