@@ -1,0 +1,158 @@
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+:root {
+  --primary: #1e90ff;
+  --primary-dark: #1e9099;
+  --secondary: #1e90ff;
+  --background-primary: #ddd;
+  --background-secondary: #66b;
+  --background-secondary-dark: #77e;
+  --text-primary: #000;
+  --text-link: #44a;
+  --text-link-hover: #bbf;
+}
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: var(--text-primary);
+  font-weight: 400;
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+a:link,
+a:visited {
+  color: var(--text-link);
+}
+a:hover,
+a:active {
+  color: var(--text-link-hover);
+}
+/* Main container */
+main {
+  display: flex;
+  flex: 1;
+}
+/* Main information - name, contact, skills */
+main > header {
+  flex: 1;
+  background-color: var(--background-secondary);
+  padding: 0 10px;
+  max-width: 350px;
+  justify-content: center;
+}
+main > header > section {
+  margin: 20px 0;
+}
+main > header h2 {
+  background-color: var(--background-secondary-dark);
+  padding: 10px 10px;
+  margin: 0 -10px;
+}
+/* Detailed information - education, experience */
+main > aside {
+  flex: 2;
+  padding: 0 20px;
+}
+main > aside > section {
+  border-bottom: 1px solid #aaa;
+}
+/* Footer */
+footer {
+  margin: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-secondary-dark);
+}
+.profile-photo {
+  border-radius: 50%;
+  width: 50%;
+}
+.skill-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 20px;
+}
+.Personal-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 20px;
+}
+.education-item-container {
+  display: flex;
+}
+.button-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  main {
+    display: block;
+
+    text-align: center;
+  }
+  main > header {
+    max-width: 100%;
+  }
+  .skill-item-container {
+    padding: 0 200px;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #0066CC;
+padding: 10px 30px;
+border: 2px solid #0066cc;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+.btn:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+}
