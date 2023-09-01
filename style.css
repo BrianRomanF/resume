@@ -50,6 +50,12 @@ a:hover,
 a:active {
   color: var(--text-link-hover);
 }
+b{
+  font-size: 1rem;
+}
+b:hover {
+color: #0066cc;
+}
 /* Main container */
 main {
   display: flex;
